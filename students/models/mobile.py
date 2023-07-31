@@ -9,7 +9,7 @@ class Mobiles(models.Model):
     _description = 'Student Mobiles'
 
     name = fields.Char()
-    brand = fields.Char(string='Brand')
+    brand = fields.Char(string='Brand')..
     price = fields.Float(string='Price')
     specifications = fields.Text(string='Specifications')
     image = fields.Binary(string="Mobile Image")
