@@ -35,6 +35,7 @@
 							</group>
 							<group>
                                 <field name="price" />
+                                <field name="image"/>
 							</group>
 						
 					</sheet>

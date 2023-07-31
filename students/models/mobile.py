@@ -12,4 +12,4 @@ class Mobiles(models.Model):
     brand = fields.Char(string='Brand')
     price = fields.Float(string='Price')
     specifications = fields.Text(string='Specifications')
-    image = fields.Binary()
+    image = fields.Binary(string="Mobile Image")
