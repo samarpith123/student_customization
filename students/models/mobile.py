@@ -13,5 +13,5 @@ class Mobiles(models.Model):
     price = fields.Float(string='Price')
     specifications = fields.Text(string='Specifications')
     image = fields.Binary(string="Mobile Image")
-    start_date = fields.Date()
+    start_date = fields.Date(string='Start Date')
     end_date = fields.Date(string='end date')
