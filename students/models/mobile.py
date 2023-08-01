@@ -8,6 +8,7 @@ class Mobile(models.Model):
 
     _name = 'student.mobile'
     _description = 'Student Mobiles'
+    
 
     customer_id = fields.Many2one('student.student',string='Customer')
     brand = fields.Char()

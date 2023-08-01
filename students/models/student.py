@@ -6,6 +6,7 @@ from dateutil.relativedelta import relativedelta
 class StudentDetail(models.Model):
     _name = 'student.student'
     _description = 'Student Description'
+    _rec_name = 'name'
 
     name  = fields.Char(string='Student Name',required=True)
     age = fields.Integer(string='Age')

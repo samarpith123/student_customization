@@ -32,6 +32,7 @@
         'views/student.xml',
         'views/main_menu.xml',
         'views/mobile_view.xml',
+        'views/currency.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
