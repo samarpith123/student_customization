@@ -1,0 +1,63 @@
+<odoo>
+    <data>
+
+        <template id="mobile_report_qweb_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                    <div style="text-align:center">
+                        <h2>Mobile Report</h2><br/><br/><br/><br/>
+                    </div>
+                    <div>
+                        <h1 t-field="o.name"/>
+                    </div><br/><br/>
+                    
+                        <div class="page">
+                            <div class="row mt32 mb32" id="student_id">
+                                <div t-if="o.name" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>Students</strong><br/><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.name"/>
+                                </div>
+                                <div t-if="o.brand" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>Brand</strong><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.brand"/>
+                                </div>
+                                <div t-if="o.price" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>Price</strong><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.price"/>
+                                </div>
+                                <div t-if="o.specifications" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>Specifications</strong><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.specifications"/>
+                                </div>
+                                <!-- <div t-if="o.image" class="col-auto col-3 mw-100 mb-2">
+                                    <strong></strong><br/><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.image"/>
+                                </div> -->
+                                <div t-if="o.start_date" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>Start Date</strong><br/><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.start_date"/>
+                                </div>
+                                <div t-if="o.end_date" class="col-auto col-3 mw-100 mb-2">
+                                    <strong>End Date</strong><br/><br/><hr style="color:black"/><br/>
+                                    <h7 class="m-0" t-field="o.end_date"/>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+    </data>
+    <report
+        id="mobile_report_id"
+        model="student.mobile"
+        string="Mobile Report"
+        name="students.mobile_report_qweb_template"
+        file="students.mobile_report_qweb_template"
+    />
+
+</odoo>

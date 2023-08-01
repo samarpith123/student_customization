@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
         'security/security.xml',
+        'reports/mobile_report.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/student.xml',
