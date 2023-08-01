@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
-access_students_admin,student.student,model_student_student,,1,1,1,1
+access_students_admin,student.student,model_student_student,admin_group,1,1,1,1
 
-access_mobile_admin,student.mobile,model_student_mobile,,1,1,1,1
+access_students_student,student.student1,model_student_student,students_group,1,0,0,1
+
+access_mobile_admin,student.mobile,model_student_mobile,admin_group,1,1,1,1

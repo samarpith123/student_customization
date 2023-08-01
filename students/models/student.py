@@ -10,4 +10,5 @@ class StudentDetail(models.Model):
     name  = fields.Char(string='Student Name',required=True)
     age = fields.Integer(string='Age')
     class_name = fields.Char(string='Class Name')
-    
+    user_id = fields.Many2one('res.users')
+        
