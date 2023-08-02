@@ -17,5 +17,5 @@ class Currency(models.Model):
     rate = fields.Float(string='Exchange Rate', digits=(12, 6))
     fired = fields.Text() 
     drest = fields.Text()   
-
+    read_t = fields.Text()
    
