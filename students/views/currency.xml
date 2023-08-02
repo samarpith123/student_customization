@@ -30,7 +30,7 @@
 					<sheet>
 						
 							<group>
-								<field name="name" /> 
+								<field name="name"/> 
 					            <field name="currency_unit_label" />
                                 
                                 

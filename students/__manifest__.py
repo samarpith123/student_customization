@@ -24,7 +24,7 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'security/security.xml',
         'reports/mobile_report.xml',
         'views/views.xml',
@@ -32,7 +32,7 @@
         'views/student.xml',
         'views/main_menu.xml',
         'views/mobile_view.xml',
-        'views/currency.xml'
+        'views/currency.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
