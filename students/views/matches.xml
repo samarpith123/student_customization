@@ -1,0 +1,63 @@
+<odoo>
+	<data>
+
+	
+		
+		<record id="matches_tree" model="ir.ui.view">
+			<field name="name">badminton.match.tree</field>
+			<field name="model">badminton.match</field>
+			<field name="arch" type="xml">
+				<tree string="Badminton Matches">
+					  <field name="player_ids" /> 
+                       
+                      <!-- <field name="court_id" />  -->
+                      <field name="date" /> 
+                      <field name="winner_id" /> 
+                   
+					  
+					
+					
+				</tree>
+			</field>
+		</record>
+		<record id="matches_form" model="ir.ui.view">
+			<field name="name">badminton.match.form</field>
+			<field name="model">badminton.match</field>
+			<field name="arch" type="xml">
+				<form string="Badminton Matches">
+					<sheet>
+						
+							<group>
+                                <field name="player_ids" widget="many2many_tags" /> 
+                               
+                                <!-- <field name="court_id" />  -->
+                                
+                                
+                                
+							</group>
+							<group>
+                                <field name="date" /> 
+                                <field name="winner_id" /> 
+							</group>
+						
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="matches_action" model="ir.actions.act_window">
+			<field name="name">Badminton Matches</field>
+			<field name="res_model">badminton.match</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">
+					Badminton Matches
+				</p>
+			</field>
+           
+		</record>
+		
+			
+        <menuitem id="school_menu_root" name="School" sequence="1" />
+		
+		<menuitem id="match_menu_root" name="Badminton Matches" action="students.matches_action" parent="students.school_menu_root"  sequence="5" />
+	</data>	
+</odoo>
