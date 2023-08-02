@@ -16,6 +16,6 @@ class Currency(models.Model):
     active = fields.Boolean(string='Active', default=True, help="If the currency is active and can be used in transactions")
     rate = fields.Float(string='Exchange Rate', digits=(12, 6))
     just = fields.Binary()
-
+    
 
    
