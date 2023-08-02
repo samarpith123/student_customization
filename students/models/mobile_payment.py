@@ -13,3 +13,4 @@ class MobilePayment(models.Model):
     amount = fields.Float()
     currency_id = fields.Many2one('res.currency')
     mobile_desk = fields.Char(string=' Mobile desk')
+    test = fields.Char()
