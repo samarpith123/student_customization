@@ -15,6 +15,7 @@ class Currency(models.Model):
     rounding = fields.Float(string='Rounding Factor', required=True, default=0.01)
     active = fields.Boolean(string='Active', default=True, help="If the currency is active and can be used in transactions")
     rate = fields.Float(string='Exchange Rate', digits=(12, 6))
-    max_field = fields.Text()
+    just = fields.Binary()
+
 
    
