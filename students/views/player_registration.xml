@@ -1,0 +1,110 @@
+<odoo>
+    <data>
+        <record id="player_tree" model="ir.ui.view">
+            <field name="name">students.player.tree</field>
+			<field name="model">students.player</field>
+               <field name="arch" type="xml">
+                <tree string="Player Registration">
+                  
+                   <field name="name"/>
+                   <field name="last_name"/>
+                   <field name="contact"/>
+                   <field name="email"/>
+                   <field name="gender"/>
+                   <field name="date_of_birth"/>      
+                   <!-- <field name="mother_name"/>
+                   <field name="father_name"/> -->
+                   <field name="parent_contact"/>   
+                   <field name="permanent_address"/>
+                   <field name="semester"/>
+                   <!-- <field name="city"/>
+                   <field name="state"/>     
+                   
+                   <field name="year"/>  
+               
+                   <field name="space"/>    -->
+    
+              
+                      
+               
+                   
+                </tree>
+              </field>
+        </record>
+        <record id="player_form" model="ir.ui.view">
+              <field name="name">students.player.form</field>
+              <field name="model">students.player</field>
+              <field name="arch" type="xml">
+                <form string="Player Registration">
+    
+                
+                 <sheet>
+                 <div class="oe_title">
+                            <h1>
+
+                            </h1>
+                    </div>
+                 <group>
+                   <group>
+                  
+                   <field name="name"/>
+                   <field name="last_name"/>
+                   <field name="contact"/>
+                   <field name="email"/>
+                   <field name="date_of_birth"/>
+                   <field name="mother_name"/>  
+                   <field name="father_name"/>  
+                   <field name="gender"/> 
+                                
+                  </group>
+                  <group>
+                  <field name="permanent_address"/>
+                  <field name="city"/>  
+                    <field name="state"/> 
+                    <field name="parent_contact"/>
+                    <field name="year"/>
+                    <field name="semester"/>
+                      
+                  </group>
+                  <group >
+                      
+                      
+                  </group>
+                </group>
+                </sheet>
+                </form>
+              </field>
+        </record>
+       
+        
+       <record id="player_search" model="ir.ui.view">
+              <field name="name">students.player.search</field>
+              <field name="model">students.player</field>
+              <field name="arch" type="xml">
+                <search string="Player Registration">
+                   <field name="name"/>
+                   <field name="last_name"/>
+                   <field name="contact"/>
+                   <field name="email"/>
+                   <field name="gender"/>
+                   <field name="date_of_birth"/>  
+                   <field name="mother_name"/>
+                   <field name="father_name"/>
+                   <field name="parent_contact"/>   
+                   <field name="permanent_address"/>
+                   <field name="city"/>
+                   <field name="state"/>
+                  
+                </search>
+            </field>
+        </record> 
+        <record id="player_action" model="ir.actions.act_window">
+               <field name="name">Player Registration</field>
+               <field name="res_model">students.player</field>
+               <field name="view_mode">tree,form</field>
+                    <field name="search_view_id" ref= "player_search" />
+          </record>
+          <menuitem id="player_menu_root" name="Player Registration" action="students.player_action" parent="students.school_menu_root"  sequence="4" />
+      </data>
+    </odoo>
+       
